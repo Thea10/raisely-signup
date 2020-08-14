@@ -1,0 +1,81 @@
+.container-fluid {
+    background: linear-gradient(73.15deg, #4205ad 5.95%, #290071 36.05%, #4205ad 68.47%, #290071 82.41%);
+    h5 {
+        font-weight: 400;
+    }
+    .form-container {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transition: all 0.6s ease-in-out;
+        width: 90%;
+        margin: 2rem auto;
+        padding: 2rem 3rem;
+        form {
+            color: #989898;
+            small,
+            span,
+            button {
+                color: #4205ad;
+            }
+            button {
+                border: 1px solid #4205ad;
+                transition: all 0.5s;
+                &:hover,
+                &:focus {
+                    border: none;
+                    background: #290071;
+                    color: white;
+                    border-radius: 8px;
+                }
+            }
+            span {
+                font-size: 0.7rem;
+                text-align: left;
+            }
+             ::placeholder {
+                color: #989898;
+            }
+             ::-webkit-input-placeholder {
+                color: #989898;
+            }
+             ::-moz-placeholder {
+                color: #989898
+            }
+            .form-control {
+                font-size: 0.8rem;
+                &:focus {
+                    border-color: #4205ad;
+                    box-shadow: none;
+                }
+            }
+        }
+        &.animate-bg {
+            background: linear-gradient(-45deg, #ffffff, #cdcdcdf0, #cacaca);
+            animation: flash 15s ease infinite;
+        }
+        @keyframes flash {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        @media (min-width: 576px) {
+            width: 65%;
+        }
+        @media (min-width: 768px) {
+            width: 50%
+        }
+        @media (min-width: 992px) {
+            width: 40%
+        }
+    }
+    @media (min-width: 576px) {
+        padding: 7rem 0;
+    }
+}
